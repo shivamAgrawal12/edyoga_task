@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/edyoga_project/static/css/main.f25c45e8.css",
+    "main.js": "/edyoga_project/static/js/main.68e08e30.js",
+    "static/js/787.633816a4.chunk.js": "/edyoga_project/static/js/787.633816a4.chunk.js",
+    "static/media/BackGround.png": "/edyoga_project/static/media/BackGround.e8c9cb4c0636ae856448.png",
+    "index.html": "/edyoga_project/index.html",
+    "main.f25c45e8.css.map": "/edyoga_project/static/css/main.f25c45e8.css.map",
+    "main.68e08e30.js.map": "/edyoga_project/static/js/main.68e08e30.js.map",
+    "787.633816a4.chunk.js.map": "/edyoga_project/static/js/787.633816a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25c45e8.css",
+    "static/js/main.68e08e30.js"
+  ]
+}
