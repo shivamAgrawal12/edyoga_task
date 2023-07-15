@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.spanclr {
+  color: #0096FF;
+}
+
+li {
+  list-style: none;
+}
+
+/* navbar style start  */
+
+.main-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-option {
+  grid-column: 3/4;
+}
+
+.menu-option ul {
+  height: 10rem;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.button-option {
+  grid-column: 4/5;
+}
+
+.button-option ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button-option ul li {
+  text-align: right;
+}
+
+
+/* ----------- Grid part ends ----------------- */
+
+.menu-option ul {
+    font-size: 0;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu-option ul li {
+    font-family: open-sans;
+      font-size: 2rem;
+      font-weight: 500;
+      color:#333;
+      display: inline-block;
+      padding: 15px;
+      position: relative;
+}
+
+.menu-option ul li .icon {
+    font-size: 1.2rem;
+}
+
+.button-option ul li .icon {
+    font-size: 2.2rem;
+}
+
+.button-option ul li {
+  font-size: 2rem;
+  margin-left: 1rem;
+  width: 6rem;
+  cursor: pointer;
+}
+
+.button-option ul li .btn{
+    margin-left: 1rem;
+    width: 15rem;
+    border-radius: 5rem;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(#0048FF, #0096FF);
+    height: 4rem;
+    cursor: pointer;
+    font-size: 2rem;
+  } 
+
+
+/* maindiv   */
+
+.maindiv {
+  min-height: 90vh;
+  display: flex;
+}
+
+.maindiv .information{
+  width: 100%;
+  padding: 5rem 15rem;
+  font-size: 2.4rem;
+  color: white;
+}
+
+.maindiv .information div{
+  display: flex;
+  margin-top: 4rem;
+}
+
+.maindiv .information div img{
+  margin-right: 3.5rem;
+}
+
+.maindiv .information div h1{
+ font-size: 2.8rem;
+ padding-top: 1.4rem;
+ font-weight: 450;
+}
+
+/* signup and subcribtion div start */
+
+.sdiv{
+  background-color: white;
+  margin: 5rem 10rem 2rem 0;
+  min-width: 55rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.sdiv .number, .text{
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.sdiv .text{
+  gap: 17rem;
+}
+
+.sdiv .number div{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #0096FF;
+  font-size: 3rem;
+  color: #fff;
+  padding: 0.5rem 1.8rem;
+}
+
+.sdiv .text div {
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  font-size: 400;
+}
+
+.sdiv .heading{
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 500;
+  color: #3C4852;
+}
+
+.plan-one, .plan-two, .plan-three, .plan-four, .plan-discount{
+  margin-top: 1rem;
+  width: 48rem;
+  height: 7rem;
+  border: 0.2rem solid #837f7f;
+  opacity: 0.7;
+  background-color: #e4dfdf;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+  cursor: not-allowed;
+}
+
+.plan-two, .plan-three, .plan-four{
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.offertag1, .offertag2 {
+  background-color: #ee2a2a;
+  width: 10rem;
+  height: 1.5rem;
+  font-size: 1.1rem;
+  font: 400;
+  font-family: sans-serif;
+  color: white;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  text-align: center;
+  margin-left: 4rem;
+  position: fixed;
+}
+
+.offertag2{
+  background-color:#47BA68;
+}
+
+.des-one, .des-two, .des-three, .des-four{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1.6rem;
+  align-items: center;
+}
+
+.iptcheck, .iptcheck1{
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #929292;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #333333;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: not-allowed;
+  margin-right: 2rem;
+  margin-left: 1.5rem;
+}
+
+.iptcheck1{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.iptcheck1{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.cncltxt, .head{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #757272;
+  margin-right: 27%;
+}
+.monthh{
+  color: #b4b2b2;
+}
+
+.head{
+  color: #000;
+}
+
+.cnclpara, .para{
+  font-size: 1.5rem;
+  text-align: right;
+  color: #948e8e;
+}
+
+.para{
+  color: #000;
+}
+
+.prizetag{
+  font-weight: 700;
+}
+
+.plan-fee, .discount-one{
+  display: flex;
+  text-align: center;
+  margin-top: 1.3rem;
+  color: #535353;
+}
+
+.plan-fee h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 45%;
+  margin-left: 2rem;
+}
+
+.plan-fee h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.plan-discount{
+  background-color: #de42131e;
+  border: 2px solid #DE4313;
+  height: 7.5rem;
+  opacity: 1;
+  cursor: text;
+  align-items: center;
+}
+.plan-discount .discount-one h2{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #DE4313;
+  margin-right: 50%;
+  margin-left: 2.3rem;
+}
+
+.plan-discount .discount-one h3{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.plan-discount .discount-two{
+  display: flex;
+  padding-left: 4%;
+}
+
+.plan-discount .discount-two img{
+  width: 2.5rem;
+  height: 2.5rem;  
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+.plan-discount .discount-two h2{
+  font-size: 1.3rem;
+  padding-top: 0.7rem;
+  color: #DE4313;
+}
+
+.final-price{
+  display: flex;
+  margin-bottom: 4%;
+}
+
+.final-price h2{
+  font-size: 2rem;
+  margin-left: 4%;
+  margin-right: 35%;
+  font-weight: 400;
+  font-family: roman;
+}
+
+.final-price h3{
+  font-size: 2rem;
+}
+
+/* button style  */
+
+.btn-group{
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.cnl-btn{
+  width: 23rem;
+  height: 6rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-right: 2.5%;
+  color: #DE4313;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: 1.6px solid#DE4313;
+}
+
+.pay-btn{
+  width: 30rem;
+  height: 6rem;
+  background-color: #47BA68;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+/* styling of div after selecting for subcription */
+
+.selected {
+  border: 0.35rem solid #47BA68;
+  background-color: #47ba6870;
+  .iptcheck1:checked{
+    background-color:#47BA68;
+  }
+}
